@@ -6,4 +6,5 @@
 
  ## What's Inside
 
- 1. Basic Command Structure
+ 1. Basic Docker Concepts
+ 2. Basic Commands
