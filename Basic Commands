@@ -24,6 +24,30 @@
       
       docker logout — Logout (recommended for security).
 
+4. Container Management
+
+      docker container ls — List running containers.
+      
+      docker container ls -a — List all containers (including stopped ones).
+      
+      docker container rm <id> — Remove container(s).
+      
+      docker container rm -f <id> — Force remove running container.
+
+5. Inspecting Containers
+
+      docker container exec -it <container> bash — Access container shell.
+      
+      docker container logs <container> — Show logs.
+      
+      docker container top <container> — Show processes.
+      
+      docker container stats — Live resource usage.
+      
+      docker container inspect <container> — Configuration details.
+
+
+
 
 
 
