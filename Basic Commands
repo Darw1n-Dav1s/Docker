@@ -1,0 +1,29 @@
+1. Docker Command Structure
+
+      Modern Structure:  docker <management command> <sub command> [options]
+          example: docker container run container_name
+      
+      Old Structure:  docker <command> (options)
+          example: docker run container_name
+
+
+2. Docker System Commands
+
+      docker version — Check installation details (client/server).
+      
+      docker system df — Shows Docker disk usage.
+      
+      docker system prune — Removes unused containers, networks, and volumes.
+      
+      docker image prune -a — Deletes all unused images.
+
+
+3. Docker Configuration
+
+      docker login — Authenticate with Docker Hub or other registries.
+      
+      docker logout — Logout (recommended for security).
+
+
+
+
