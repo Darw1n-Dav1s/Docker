@@ -37,3 +37,20 @@ docker run -it -p 5000:5000 flask-node-image
 
 Accessible at http://localhost:5000.
 
+### Cleanup:
+To stop the container:
+Ctrl + C
+
+
+To remove the image:
+```
+docker rmi flask-node-image
+```
+
+
+### Notes:
+
+You can add more Python or Node.js dependencies by modifying the Dockerfile (pip install or npm install).
+
+Flask app should be inside the same directory or mounted with a volume.
+
