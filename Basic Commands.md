@@ -21,7 +21,7 @@ example: docker run container_name
 `
 
 
-## Docker System Commands
+## 1. Docker System Commands
 
 Check installation details (client/server).
 ```
@@ -44,7 +44,7 @@ docker image prune -a
 ```
 
 
-##  Docker Configuration
+##  2. Docker Configuration
 
  Authenticate with Docker Hub or other registries.
   ```
@@ -57,7 +57,7 @@ docker logout
 ```
 
    
-## Container Management
+## 3. Container Management
 
 List running containers.
 ```
@@ -79,8 +79,47 @@ Force remove running container.
 docker container rm -f <id>
 ```
 
+### 4. Container Controls
+Running Containers:
+```
+docker container run -p 80:80 -d --name <name> <image>:<tag>
+```
 
-## Inspecting Containers
+Common Flags:
+`
+-d .
+`— Detached mode
+
+`
+-p 
+` — Port mapping (host:container).
+
+`
+--name
+`— Name the container.
+
+`
+-it
+`— Interactive terminal.
+
+`
+--rm 
+`— Remove container after exit.
+
+`
+--network <name> 
+`— Use a specific network.
+
+`
+--network-alias <alias> 
+`— Assign DNS alias.
+
+`
+-v <volume>:<path> 
+`— Mount a volume.
+
+
+## 5. Inspecting Containers
 
 Access container shell.
 ```
