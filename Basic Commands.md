@@ -147,6 +147,88 @@ docker container inspect <container>
 ```
 
 
+## 6. Networking in Docker
+**Basics**
+
+Docker containers are on a private network by default.
+
+Inter-container communication is enabled by default.
+
+**Types of Networks:**
+
+host — Direct access to host network (--network host)
+
+bridge — Default; uses NAT (--network bridge)
+
+none — Isolated network (--network none)
+
+
+### Commands
+Show exposed ports
+```
+docker container port <container>
+```
+
+List networks
+```
+docker network ls
+```
+
+Details of a network
+```
+docker network inspect <network>
+```
+
+Create network
+ ```
+ docker network create <name> --driver <type>
+```
+
+Connect container to network
+```
+docker network connect <network> <container>
+```
+
+Disconnect container
+```
+docker network disconnect <network> <container>
+```
+
+**DNS in Custom Networks:**
+Use --network-alias to define DNS names for scalable deployments.
+
+
+## 7. Working with Images
+
+ List local images
+ ```
+ docker image ls
+ ```
+
+View image layer changes
+```
+docker image history <image>
+```
+
+Rename/tag image
+```
+docker image tag <old>:<tag> <new>:<tag>
+```
+
+
+Push to Docker Hub
+```
+docker image push <name>:<tag>
+```
+
+
+
+
+
+
+
+
+
 
 
 
